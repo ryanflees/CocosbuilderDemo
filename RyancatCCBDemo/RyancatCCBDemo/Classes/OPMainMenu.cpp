@@ -101,14 +101,8 @@ void OPMainMenu::onEnter()
         animationManager->runAnimationsForSequenceNamed("showSpindrift_2");
     }
 
-  //  SimpleAudioEngine::sharedEngine()->playBackgroundMusic("loadingMusic.mp3", true);
-    //SimpleAudioEngine::sharedEngine()->playBackgroundMusic("click.mp3", true);
     SimpleAudioEngine::sharedEngine()->preloadBackgroundMusic("loadingMusic.mp3");
     SimpleAudioEngine::sharedEngine()->playBackgroundMusic("loadingMusic.mp3",true);
-    //animationManager->runAnimationsForSequenceNamed("wave_01");
-    //animationManager->runAnimationsForSequenceNamed("wave_02");
-  //  animationManager->runAnimationsForSequenceNamed("wave_03");
-  //  animationManager->runAnimationsForSequenceNamed("wave_04");
 }
 
 void OPMainMenu::onExit()

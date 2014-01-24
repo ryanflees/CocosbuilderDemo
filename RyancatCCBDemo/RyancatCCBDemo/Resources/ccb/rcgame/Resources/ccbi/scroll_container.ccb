@@ -116,6 +116,14 @@
 							<integer>150</integer>
 						</array>
 					</dict>
+					<dict>
+						<key>name</key>
+						<string>delay</string>
+						<key>type</key>
+						<string>Integer</string>
+						<key>value</key>
+						<integer>400</integer>
+					</dict>
 				</array>
 			</dict>
 			<dict>
@@ -211,6 +219,14 @@
 							<integer>150</integer>
 							<integer>150</integer>
 						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>delay</string>
+						<key>type</key>
+						<string>Integer</string>
+						<key>value</key>
+						<integer>400</integer>
 					</dict>
 				</array>
 			</dict>
@@ -308,9 +324,15 @@
 							<integer>150</integer>
 						</array>
 					</dict>
+					<dict>
+						<key>name</key>
+						<string>delay</string>
+						<key>type</key>
+						<string>Integer</string>
+						<key>value</key>
+						<integer>400</integer>
+					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>

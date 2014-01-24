@@ -11,6 +11,7 @@
 #define PROPERTY_IMAGEDISPLAYFRAME "imageDisplayFrame"
 #define PROPERTY_CCCONTROL "ccControl"
 #define PROPERTY_SELECTEDCOLOR "selectedColor"
+#define PROPERTY_DELAY "delay"
 
 void RCImageButtonLoader::onHandlePropTypeSpriteFrame(CCNode * pNode, CCNode * pParent, const char* pPropertyName, CCSpriteFrame * pCCSpriteFrame, CCBReader * pCCBReader) {
     if (strcmp(pPropertyName, PROPERTY_IMAGEDISPLAYFRAME) == 0) {
@@ -43,5 +44,17 @@ void RCImageButtonLoader::onHandlePropTypeColor3(CCNode * pNode, CCNode * pParen
         CCNodeLoader::onHandlePropTypeColor3(pNode, pParent, pPropertyName, pCCColor3B, pCCBReader);
     }
 }
+
+void RCImageButtonLoader::onHandlePropTypeInteger(CCNode * pNode, CCNode * pParent, const char* pPropertyName, int pInteger, CCBReader * pCCBReader)
+{
+    if (strcmp(pPropertyName, PROPERTY_DELAY) == 0) {
+        ((RCImageButton*)pNode)->setTouchUpOutDelay(pInteger);
+    }
+    else
+    {
+        CCNodeLoader::onHandlePropTypeInteger(pNode, pParent, pPropertyName, pInteger, pCCBReader);
+    }
+}
+
 
 

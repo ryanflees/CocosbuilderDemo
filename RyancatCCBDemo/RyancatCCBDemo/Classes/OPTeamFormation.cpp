@@ -109,6 +109,11 @@ bool OPTeamFormation::onAssignCCBCustomProperty(CCObject* pTarget, const char* p
 
 void OPTeamFormation::onNodeLoaded(CCNode *pNode, CCNodeLoader *pNodeLoader)
 {
+    if (m_pIconScrollView) {
+        CCNode* pNode = CCNode::create();
+        m_pIconScrollView->setContainer(pNode);
+        pNode->setContentSize(m_pIconScrollView->getViewSize());
+    }
     for (int i=0; i<3; i++) {
         if (m_pSpellIcon[i]) {
             m_pSpellIcon[i]->setUserData(m_pSpellIconBack[i]);
@@ -177,7 +182,7 @@ void OPTeamFormation::reloadIcons()
         CCSprite* pIconBack = (CCSprite*)m_pIconBackArray->objectAtIndex(i);
         RCImageButton* pButton = (RCImageButton*)pObject;
         CCPoint pos = ccp(m_pIconScrollView->getContentSize().width/2,
-            m_pIconScrollView->getContentSize().height
+            m_pIconScrollView->getViewSize().height
             - (i+1)*pButton->getContentSize().height*1.2f);
         pButton->setPosition(pos);
         pIconBack->setPosition(pos);

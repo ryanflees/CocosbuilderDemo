@@ -13,7 +13,14 @@
 	<key>fileVersion</key>
 	<integer>4</integer>
 	<key>guides</key>
-	<array/>
+	<array>
+		<dict>
+			<key>orientation</key>
+			<integer>0</integer>
+			<key>position</key>
+			<real>-60</real>
+		</dict>
+	</array>
 	<key>jsControlled</key>
 	<false/>
 	<key>nodeGraph</key>
@@ -22,6 +29,152 @@
 		<string>CCNode</string>
 		<key>children</key>
 		<array>
+			<dict>
+				<key>baseClass</key>
+				<string>RCTabBar</string>
+				<key>children</key>
+				<array/>
+				<key>customClass</key>
+				<string></string>
+				<key>displayName</key>
+				<string>RCTabBar</string>
+				<key>memberVarAssignmentName</key>
+				<string>tabBar</string>
+				<key>memberVarAssignmentType</key>
+				<integer>1</integer>
+				<key>properties</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>anchorPoint</string>
+						<key>type</key>
+						<string>Point</string>
+						<key>value</key>
+						<array>
+							<real>0.0</real>
+							<real>0.0</real>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>scale</string>
+						<key>type</key>
+						<string>ScaleLock</string>
+						<key>value</key>
+						<array>
+							<real>1</real>
+							<real>1</real>
+							<false/>
+							<integer>0</integer>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>ignoreAnchorPointForPosition</string>
+						<key>type</key>
+						<string>Check</string>
+						<key>value</key>
+						<false/>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>backgroundFrame</string>
+						<key>type</key>
+						<string>SpriteFrame</string>
+						<key>value</key>
+						<array>
+							<string>Imagesetfile/mainScene3.plist</string>
+							<string>u_stonebg01.png</string>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>backgroundSize</string>
+						<key>type</key>
+						<string>Size</string>
+						<key>value</key>
+						<array>
+							<real>730</real>
+							<real>530</real>
+							<integer>0</integer>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>direction</string>
+						<key>type</key>
+						<string>IntegerLabeled</string>
+						<key>value</key>
+						<integer>0</integer>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>tabButtonSize</string>
+						<key>type</key>
+						<string>Size</string>
+						<key>value</key>
+						<array>
+							<real>160</real>
+							<real>70</real>
+							<integer>0</integer>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>tabButtonNormalFrame</string>
+						<key>type</key>
+						<string>SpriteFrame</string>
+						<key>value</key>
+						<array>
+							<string></string>
+							<string>ui/tabbar_button_normal.png</string>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>tabButtonSelectedFrame</string>
+						<key>type</key>
+						<string>SpriteFrame</string>
+						<key>value</key>
+						<array>
+							<string></string>
+							<string>ui/tabbar_button_selected.png</string>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>tabButtonCount</string>
+						<key>type</key>
+						<string>Integer</string>
+						<key>value</key>
+						<integer>3</integer>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>firstTabButtonSpace</string>
+						<key>type</key>
+						<string>Integer</string>
+						<key>value</key>
+						<integer>10</integer>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>tabButtonSpace</string>
+						<key>type</key>
+						<string>Integer</string>
+						<key>value</key>
+						<integer>15</integer>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>buttonToBarSpace</string>
+						<key>type</key>
+						<string>Integer</string>
+						<key>value</key>
+						<integer>0</integer>
+					</dict>
+				</array>
+			</dict>
 			<dict>
 				<key>baseClass</key>
 				<string>CCLabelBMFont</string>
@@ -3081,7 +3234,7 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>347.04000854492188</real>
+									<real>312.48001098632812</real>
 									<real>465.12002563476562</real>
 									<integer>0</integer>
 								</array>
@@ -3133,6 +3286,99 @@
 								<string>Text</string>
 								<key>value</key>
 								<string>兑换礼包</string>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>baseClass</key>
+						<string>RCTableView</string>
+						<key>children</key>
+						<array/>
+						<key>customClass</key>
+						<string></string>
+						<key>displayName</key>
+						<string>RCTableView</string>
+						<key>memberVarAssignmentName</key>
+						<string>packTableView</string>
+						<key>memberVarAssignmentType</key>
+						<integer>1</integer>
+						<key>properties</key>
+						<array>
+							<dict>
+								<key>name</key>
+								<string>position</string>
+								<key>type</key>
+								<string>Position</string>
+								<key>value</key>
+								<array>
+									<real>-1.9745129346847534</real>
+									<real>8.7146463394165039</real>
+									<integer>0</integer>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>contentSize</string>
+								<key>type</key>
+								<string>Size</string>
+								<key>value</key>
+								<array>
+									<real>660</real>
+									<real>430</real>
+									<integer>0</integer>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>anchorPoint</string>
+								<key>type</key>
+								<string>Point</string>
+								<key>value</key>
+								<array>
+									<real>0.0</real>
+									<real>0.0</real>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>scale</string>
+								<key>type</key>
+								<string>ScaleLock</string>
+								<key>value</key>
+								<array>
+									<real>1</real>
+									<real>1</real>
+									<false/>
+									<integer>0</integer>
+								</array>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>ignoreAnchorPointForPosition</string>
+								<key>type</key>
+								<string>Check</string>
+								<key>value</key>
+								<false/>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>cellCount</string>
+								<key>type</key>
+								<string>Integer</string>
+								<key>value</key>
+								<integer>10</integer>
+							</dict>
+							<dict>
+								<key>name</key>
+								<string>cellSize</string>
+								<key>type</key>
+								<string>Size</string>
+								<key>value</key>
+								<array>
+									<real>660</real>
+									<real>200</real>
+									<integer>0</integer>
+								</array>
 							</dict>
 						</array>
 					</dict>
@@ -3195,17 +3441,17 @@
 			</dict>
 			<dict>
 				<key>baseClass</key>
-				<string>RCTableView</string>
+				<string>RCImageButton</string>
 				<key>children</key>
 				<array/>
 				<key>customClass</key>
 				<string></string>
 				<key>displayName</key>
-				<string>RCTableView</string>
+				<string>RCImageButton</string>
 				<key>memberVarAssignmentName</key>
-				<string>tableView</string>
+				<string></string>
 				<key>memberVarAssignmentType</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>properties</key>
 				<array>
 					<dict>
@@ -3215,20 +3461,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>-1.9745129346847534</real>
-							<real>-46.58135986328125</real>
-							<integer>0</integer>
-						</array>
-					</dict>
-					<dict>
-						<key>name</key>
-						<string>contentSize</string>
-						<key>type</key>
-						<string>Size</string>
-						<key>value</key>
-						<array>
-							<real>750</real>
-							<real>500</real>
+							<real>580.6080322265625</real>
+							<real>565.0560302734375</real>
 							<integer>0</integer>
 						</array>
 					</dict>
@@ -3266,25 +3500,50 @@
 					</dict>
 					<dict>
 						<key>name</key>
-						<string>cellCount</string>
+						<string>imageDisplayFrame</string>
 						<key>type</key>
-						<string>Integer</string>
+						<string>SpriteFrame</string>
 						<key>value</key>
-						<integer>10</integer>
+						<array>
+							<string>Imagesetfile/mainScene3.plist</string>
+							<string>u_scyj.png</string>
+						</array>
 					</dict>
 					<dict>
 						<key>name</key>
-						<string>cellSize</string>
+						<string>ccControl</string>
 						<key>type</key>
-						<string>Size</string>
+						<string>BlockCCControl</string>
 						<key>value</key>
 						<array>
-							<real>750</real>
-							<real>150</real>
+							<string></string>
+							<integer>0</integer>
 							<integer>0</integer>
 						</array>
 					</dict>
+					<dict>
+						<key>name</key>
+						<string>selectedColor</string>
+						<key>type</key>
+						<string>Color3</string>
+						<key>value</key>
+						<array>
+							<integer>150</integer>
+							<integer>150</integer>
+							<integer>150</integer>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>delay</string>
+						<key>type</key>
+						<string>Integer</string>
+						<key>value</key>
+						<integer>400</integer>
+					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>

@@ -63,9 +63,6 @@ void OPSailingPage::onNodeLoaded(CCNode *pNode, CCNodeLoader *pNodeLoader)
 void OPSailingPage::onEnter()
 {
     CCNode::onEnter();
-    CCCallFunc* callback = CCCallFunc::create(this, callfunc_selector(OPSailingPage::addScrollViewContent));
-    CCFiniteTimeAction* seq = CCSequence::create(CCDelayTime::create(0.1f),callback,NULL);
-    runAction(seq);
 }
 void OPSailingPage::onExit()
 {

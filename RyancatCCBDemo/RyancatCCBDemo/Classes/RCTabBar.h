@@ -65,6 +65,7 @@ private:
     void switchToPage(int index);
     void selectTab(CCScale9Sprite* pButton);
     
+    long m_touchTimer;
     CC_SYNTHESIZE(RCTabBarDelegate*, m_pDelegate, Delegate);
 
     CC_PROPERTY(int, m_firstTabButtonSpace, FirstTabButtonSpace);

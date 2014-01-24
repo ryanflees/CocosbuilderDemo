@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>BC63D59B-022B-45C4-B7E1-43793B330EC0</string>
+	<key>IDESourceControlProjectName</key>
+	<string>RCTabBar</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>28FDE818-CE7B-499A-8CC4-E84A6B7FAF5F</key>
+		<string>https://github.com/ryanflees/CocosbuilderDemo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CocosBuilder-3.0.alpha5-src/PlugIn Nodes/RCTabBar/RCTabBar.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>28FDE818-CE7B-499A-8CC4-E84A6B7FAF5F</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ryanflees/CocosbuilderDemo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>28FDE818-CE7B-499A-8CC4-E84A6B7FAF5F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>28FDE818-CE7B-499A-8CC4-E84A6B7FAF5F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CocosbuilderDemo</string>
+		</dict>
+	</array>
+</dict>
+</plist>

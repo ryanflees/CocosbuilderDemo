@@ -30,6 +30,7 @@
 }
 
 @property (nonatomic) ccColor3B selectedColor;
+@property (nonatomic) int delay;
 
 -(void) setImageDisplayFrame:(CCSpriteFrame*)frame;
 

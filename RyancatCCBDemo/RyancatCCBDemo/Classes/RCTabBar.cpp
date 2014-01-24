@@ -19,6 +19,7 @@ RCTabBar::RCTabBar()
     ,m_tabPanelSpace()
     ,m_pSelectedTabButton()
     ,m_pTouchedTabButton()
+    ,m_touchTimer()
 {
     
 }
@@ -334,6 +335,9 @@ bool RCTabBar::ccTouchBegan(CCTouch *pTouch, CCEvent *pEvent)
             m_pTouchedTabButton = pButton;
             pButton->setSpriteFrame(m_pButtonSelectedFrame);
             pButton->setContentSize(m_tabButtonSize);
+            struct cc_timeval now;
+            CCTime::gettimeofdayCocos2d(&now, NULL);
+            m_touchTimer = now.tv_sec * 1000 + now.tv_usec / 1000;
             return true;
         }
     }
@@ -350,9 +354,14 @@ void RCTabBar::ccTouchMoved(CCTouch *pTouch, CCEvent *pEvent)
                                        , m_pTouchedTabButton->getContentSize().width
                                        , m_pTouchedTabButton->getContentSize().height);
         if (!buttonRect.containsPoint(touchPoint)) {
-            m_pTouchedTabButton->setSpriteFrame(m_pButtonNormalFrame);
-            m_pTouchedTabButton->setContentSize(m_tabButtonSize);
-            m_pTouchedTabButton = NULL;
+            struct cc_timeval now;
+            CCTime::gettimeofdayCocos2d(&now, NULL);
+            long timeNow = now.tv_sec * 1000 + now.tv_usec / 1000;
+            if (timeNow - m_touchTimer >= 400) {
+                m_pTouchedTabButton->setSpriteFrame(m_pButtonNormalFrame);
+                m_pTouchedTabButton->setContentSize(m_tabButtonSize);
+                m_pTouchedTabButton = NULL;
+            }
             return;
         }
     }
@@ -379,9 +388,24 @@ void RCTabBar::ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent)
         }
         else
         {
-            m_pTouchedTabButton->setSpriteFrame(m_pButtonNormalFrame);
-            m_pTouchedTabButton->setContentSize(m_tabButtonSize);
-            m_pTouchedTabButton = NULL;
+            struct cc_timeval now;
+            CCTime::gettimeofdayCocos2d(&now, NULL);
+            long timeNow = now.tv_sec * 1000 + now.tv_usec / 1000;
+            if (timeNow - m_touchTimer < 400) {
+                m_pTouchedTabButton->setSpriteFrame(m_pButtonNormalFrame);
+                m_pTouchedTabButton->setContentSize(m_tabButtonSize);
+                switchToPage(m_pTouchedTabButton->getTag());
+                if (m_pDelegate) {
+                    m_pDelegate->onTabSelected(this, NULL, m_pTouchedTabButton->getTag());
+                }
+                m_pTouchedTabButton = NULL;
+            }
+            else
+            {
+                m_pTouchedTabButton->setSpriteFrame(m_pButtonNormalFrame);
+                m_pTouchedTabButton->setContentSize(m_tabButtonSize);
+                m_pTouchedTabButton = NULL;
+            }
             return;
         }
     }

@@ -113,7 +113,7 @@ CCTableViewCell* OPNoticeBoard::tableCellAtIndex(CCTableView *table, unsigned in
         cell->autorelease();
         
         CCNode* pCellNode = createNoticeContent();
-        pCellNode->setPosition(ccp(m_pTableView->getCellSize().width/2, m_pTableView->getCellSize().height/2));
+        pCellNode->setPosition(ccp(0, 0));
         pCellNode->setTag(1);
         cell->addChild(pCellNode);
     }

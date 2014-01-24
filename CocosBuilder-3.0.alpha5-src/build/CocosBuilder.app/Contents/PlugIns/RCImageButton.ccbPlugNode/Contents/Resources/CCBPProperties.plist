@@ -70,6 +70,16 @@
 			<key>name</key>
 			<string>selectedColor</string>
 		</dict>
+		<dict>
+			<key>default</key>
+			<integer>400</integer>
+			<key>displayName</key>
+			<string>Touch Delay</string>
+			<key>type</key>
+			<string>Integer</string>
+			<key>name</key>
+			<string>delay</string>
+		</dict>
 	</array>
 </dict>
 </plist>

@@ -32,6 +32,7 @@
 
 @implementation RCImageButton
 @synthesize selectedColor;
+@synthesize delay;
 
 -(id) init
 {

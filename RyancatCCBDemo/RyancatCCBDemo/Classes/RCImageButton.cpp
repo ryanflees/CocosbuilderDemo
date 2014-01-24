@@ -79,6 +79,9 @@ void RCImageButton::setTarget(CCObject* pObj,SEL_CallFuncN fun)
 
 bool RCImageButton::ccTouchBegan(CCTouch *pTouch, CCEvent *pEvent)
 {
+    if (!isVisible() || !getParent()->isVisible()) {
+        return false;
+    }
     CCPoint realitivePoint = convertToNodeSpace(pTouch->getLocation());
 	if(realitivePoint.x >= 0 && realitivePoint.y >= 0 && m_obContentSize.width> realitivePoint.x && m_obContentSize.height>realitivePoint.y)
 	{

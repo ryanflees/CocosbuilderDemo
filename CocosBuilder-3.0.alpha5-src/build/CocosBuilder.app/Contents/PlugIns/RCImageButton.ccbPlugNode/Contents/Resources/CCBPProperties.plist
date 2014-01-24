@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>inheritsFrom</key>
+	<string>CCNode</string>
+	<key>canHaveChildren</key>
+	<false/>
+	<key>className</key>
+	<string>RCImageButton</string>
+	<key>editorClassName</key>
+	<string>RCImageButton</string>
+	<key>propertiesOverridden</key>
+	<array>
+		<dict>
+			<key>readOnly</key>
+			<true/>
+			<key>type</key>
+			<string>Size</string>
+			<key>name</key>
+			<string>contentSize</string>
+			<key>displayName</key>
+			<string>Content size</string>
+		</dict>
+	</array>
+	<key>properties</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>RCImageButton</string>
+			<key>displayName</key>
+			<string>RCImageButton</string>
+			<key>type</key>
+			<string>Separator</string>
+		</dict>
+		<dict>
+			<key>default</key>
+			<array>
+				<string></string>
+				<string></string>
+			</array>
+			<key>displayName</key>
+			<string>Image Frame</string>
+			<key>type</key>
+			<string>SpriteFrame</string>
+			<key>name</key>
+			<string>imageDisplayFrame</string>
+		</dict>
+		<dict>
+			<key>displayName</key>
+			<string></string>
+			<key>type</key>
+			<string>BlockCCControl</string>
+			<key>name</key>
+			<string>ccControl</string>
+		</dict>
+		<dict>
+			<key>animatable</key>
+			<true/>
+			<key>default</key>
+			<array>
+				<integer>150</integer>
+				<integer>150</integer>
+				<integer>150</integer>
+			</array>
+			<key>displayName</key>
+			<string>Selected Color</string>
+			<key>type</key>
+			<string>Color3</string>
+			<key>name</key>
+			<string>selectedColor</string>
+		</dict>
+	</array>
+</dict>
+</plist>

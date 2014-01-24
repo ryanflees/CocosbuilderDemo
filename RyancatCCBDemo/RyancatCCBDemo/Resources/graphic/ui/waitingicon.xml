@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Animation image="W:\Resources\ui\waitingicon.png" version="4">
+  <Modules>
+    <Module h="94" w="91" x="0" y="0" />
+    <Module h="100" w="70" x="92" y="0" />
+    <Module h="100" w="89" x="163" y="0" />
+    <Module h="92" w="103" x="254" y="0" />
+    <Module h="83" w="98" x="0" y="94" />
+    <Module h="98" w="93" x="111" y="102" />
+    <Module h="103" w="90" x="205" y="102" />
+    <Module h="99" w="98" x="298" y="91" />
+    <Module h="80" w="106" x="0" y="178" />
+    <Module h="89" w="103" x="107" y="202" />
+  </Modules>
+  <Frames>
+    <Frame ab="0" al="0" ar="0" at="0" cb="0" cl="0" cr="0" ct="0" name="untitled1">
+      <Sprite m00="1.0" m10="0.0" m01="0.0" m11="1.0" m02="-50.0" m12="-48.0" module_id="0" />
+    </Frame>
+    <Frame ab="0" al="0" ar="0" at="0" cb="0" cl="0" cr="0" ct="0" name="copy of untitled1      ">
+      <Sprite m00="1.0" m10="0.0" m01="0.0" m11="1.0" m02="-51.0" m12="-59.0" module_id="1" />
+    </Frame>
+    <Frame ab="0" al="0" ar="0" at="0" cb="0" cl="0" cr="0" ct="0" name="copy of copy of untitled1">
+      <Sprite m00="1.0" m10="0.0" m01="0.0" m11="1.0" m02="-49.0" m12="-58.0" module_id="2" />
+    </Frame>
+    <Frame ab="0" al="0" ar="0" at="0" cb="0" cl="0" cr="0" ct="0" name="copy of copy of copy of untitled1">
+      <Sprite m00="1.0" m10="0.0" m01="0.0" m11="1.0" m02="-51.0" m12="-58.0" module_id="3" />
+    </Frame>
+    <Frame ab="0" al="0" ar="0" at="0" cb="0" cl="0" cr="0" ct="0" name="copy of copy of copy of copy of untitled1">
+      <Sprite m00="1.0" m10="0.0" m01="0.0" m11="1.0" m02="-46.0" m12="-57.0" module_id="4" />
+    </Frame>
+    <Frame ab="0" al="0" ar="0" at="0" cb="0" cl="0" cr="0" ct="0" name="copy of copy of copy of copy of copy of untitled1">
+      <Sprite m00="1.0" m10="0.0" m01="0.0" m11="1.0" m02="-42.0" m12="-53.0" module_id="5" />
+    </Frame>
+    <Frame ab="0" al="0" ar="0" at="0" cb="0" cl="0" cr="0" ct="0" name="copy of copy of copy of copy of copy of copy of untitled1">
+      <Sprite m00="1.0" m10="0.0" m01="0.0" m11="1.0" m02="-39.0" m12="-52.0" module_id="6" />
+    </Frame>
+    <Frame ab="0" al="0" ar="0" at="0" cb="0" cl="0" cr="0" ct="0" name="copy of copy of copy of copy of copy of copy of copy of untitled1">
+      <Sprite m00="1.0" m10="0.0" m01="0.0" m11="1.0" m02="-50.0" m12="-49.0" module_id="7" />
+    </Frame>
+    <Frame ab="0" al="0" ar="0" at="0" cb="0" cl="0" cr="0" ct="0" name="copy of copy of copy of copy of copy of copy of copy of copy of untitled1">
+      <Sprite m00="1.0" m10="0.0" m01="0.0" m11="1.0" m02="-57.0" m12="-35.0" module_id="8" />
+    </Frame>
+    <Frame ab="0" al="0" ar="0" at="0" cb="0" cl="0" cr="0" ct="0" name="copy of copy of copy of copy of copy of copy of copy of copy of copy of untitled1">
+      <Sprite m00="1.0" m10="0.0" m01="0.0" m11="1.0" m02="-57.0" m12="-47.0" module_id="9" />
+    </Frame>
+  </Frames>
+  <Actions>
+    <Action name="untitled1">
+      <Sequence duration="1" flag="0" id="0" />
+      <Sequence duration="1" flag="0" id="1" />
+      <Sequence duration="1" flag="0" id="2" />
+      <Sequence duration="1" flag="0" id="3" />
+      <Sequence duration="1" flag="0" id="4" />
+      <Sequence duration="1" flag="0" id="5" />
+      <Sequence duration="1" flag="0" id="6" />
+      <Sequence duration="1" flag="0" id="7" />
+      <Sequence duration="1" flag="0" id="8" />
+      <Sequence duration="1" flag="0" id="9" />
+      <MechModel flag="0" vx="0" vy="0" ax="0" ay="0" />
+    </Action>
+  </Actions>
+</Animation>
+

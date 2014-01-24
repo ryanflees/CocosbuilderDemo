@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>inheritsFrom</key>
+	<string>CCScrollView</string>
+	<key>canHaveChildren</key>
+	<string>NO</string>
+	<key>className</key>
+	<string>RCScrollView</string>
+	<key>editorClassName</key>
+	<string>RCScrollView</string>
+	<key>properties</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>RCScrollView</string>
+			<key>displayName</key>
+			<string>RCScrollView</string>
+			<key>type</key>
+			<string>Separator</string>
+		</dict>
+		<dict>
+			<key>displayName</key>
+			<string>Is Page Mode</string>
+			<key>type</key>
+			<string>Check</string>
+			<key>name</key>
+			<string>pageMode</string>
+		</dict>
+	</array>
+</dict>
+</plist>
